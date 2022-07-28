@@ -11,7 +11,7 @@ formulario.addEventListener("submit", (event) => {
   };
   //abajo paso el objeto dataTransaction a JSON
   let jsondata = JSON.stringify(dataTransaction);
-  //console.log(jsondata); //esto es un objeto
+  console.log(jsondata); //esto es un objeto
 
   //siguiente paso mandar los datos al backend y guardarlos ahi
   fetch("http://localhost:3000/transaction", {

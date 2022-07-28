@@ -32,9 +32,9 @@ app.get("/transaction", (req, res) => {
 // cuando te hagan un post http://localhost:3000/prueba
 app.post("/transaction", (req, res) => {
   let bodyResponse = req.body; //bodyResponse es un objeto
+  console.log(bodyResponse);
   transactionArray.push(bodyResponse);
   //res.send(transactionArray);
-  //console.log(JSON.stringify(transactionArray));
 });
 
 app.delete("/delete", (req, res) => {
