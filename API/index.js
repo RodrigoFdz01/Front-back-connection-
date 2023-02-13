@@ -32,8 +32,10 @@ app.get("/transaction", (req, res) => {
 // cuando te hagan un post http://localhost:3000/prueba
 app.post("/transaction", (req, res) => {
   let bodyResponse = req.body; //bodyResponse es un objeto
-  console.log(bodyResponse);
+  //console.log("linea 35 :" + JSON.stringify(bodyResponse));
+  //console.log(bodyResponse);
   transactionArray.push(bodyResponse);
+  console.log(transactionArray);
   //res.send(transactionArray);
 });
 

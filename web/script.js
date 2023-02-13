@@ -4,6 +4,7 @@ formulario.addEventListener("submit", (event) => {
   event.preventDefault();
   let transactionDescription = document.getElementById("itemDescription").value;
   let transactionPrice = document.getElementById("itemPrice").value;
+
   //debajo creo un objeto q obtiene los valores cuando envias
   let dataTransaction = {
     transactionDescription: transactionDescription,
@@ -18,4 +19,6 @@ formulario.addEventListener("submit", (event) => {
     method: "Post",
     body: jsondata,
   });
+  document.getElementById("itemDescription").value = " ";
+  document.getElementById("itemPrice").value = " ";
 });
